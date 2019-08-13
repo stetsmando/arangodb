@@ -1,0 +1,22 @@
+{
+  "name": "arangodb-lighting-talk",
+  "version": "1.0.0",
+  "description": "All materials related to my \"Let's have a look at ArangoDB\" talk.",
+  "main": "index.js",
+  "scripts": {
+    "slides": "reveal-md ./slides/slides.md --theme beige -w --css ./slides/slides.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stetsmando/arangodb.git"
+  },
+  "author": "Stetson Pierce <stetsmando@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/stetsmando/arangodb/issues"
+  },
+  "homepage": "https://github.com/stetsmando/arangodb#readme",
+  "devDependencies": {
+    "reveal-md": "~3.1.0"
+  }
+}
