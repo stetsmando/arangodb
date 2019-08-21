@@ -4,7 +4,11 @@
   "description": "All materials related to my \"Let's have a look at ArangoDB\" talk.",
   "main": "index.js",
   "scripts": {
-    "slides": "reveal-md ./slides/slides.md --theme beige -w --css ./slides/slides.css"
+    "slides": "reveal-md ./slides/slides.md --theme beige -w --css ./slides/slides.css",
+    "db": "node src/scripts/init-database.js",
+    "document": "npm run db && npm run people",
+    "people": "node src/scripts/init-people.js",
+    "view": "node src/scripts/init-view.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +22,9 @@
   "homepage": "https://github.com/stetsmando/arangodb#readme",
   "devDependencies": {
     "reveal-md": "~3.1.0"
+  },
+  "dependencies": {
+    "arangojs": "~6.10.0",
+    "faker": "~4.1.0"
   }
 }

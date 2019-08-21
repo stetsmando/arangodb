@@ -1,0 +1,10 @@
+{
+  "name": "watchlist-search",
+  "version": "1.0.0",
+  "author": "Stetson Pierce",
+  "description": "Provide HTTP API for searching watchlist's mantras.",
+  "engines": {
+    "arangodb": "^3.0.0"
+  },
+  "main": "index.js"
+}

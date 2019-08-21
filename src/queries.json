@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Demo 01 - Find all people",
+    "value": "FOR person IN people\n    RETURN person"
+  },
+  {
+    "name": "Demo 02 - Insert new person ",
+    "value": "INSERT { \n  _key: '100',\n  name: 'Stetson',\n  age: 27\n} INTO people"
+  },
+  {
+    "name": "Demo 03 - Filter people",
+    "value": "FOR person IN people\n    FILTER person.name == 'Stetson'\n    RETURN person._key"
+  },
+  {
+    "name": "Demo 04 - Find specific person",
+    "value": "RETURN DOCUMENT('people/100')"
+  },
+  {
+    "name": "Demo 05 - Remove specific person",
+    "value": "REMOVE { _key: '100' } IN people"
+  },
+  {
+    "name": "Demo 06 - Phrase search",
+    "value": "FOR suspect IN @@view\n    SEARCH PHRASE(suspect.mantra, @phrase, 'text_en')\n    RETURN suspect",
+    "parameter": {
+      "@view": "watchlist",
+      "phrase": "Enter search phrase..."
+    }
+  }
+]
