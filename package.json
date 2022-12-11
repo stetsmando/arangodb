@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/stetsmando/arangodb#readme",
   "devDependencies": {
-    "reveal-md": "~3.1.0"
+    "reveal-md": "~5.4.0"
   },
   "dependencies": {
     "arangojs": "~6.10.0",
